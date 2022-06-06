@@ -1,3 +1,3 @@
 # Food ordering using kafka-python
 ---
-## in progress
+## Project in progress ..
