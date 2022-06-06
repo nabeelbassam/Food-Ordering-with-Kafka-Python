@@ -18,5 +18,12 @@ print("Analytics consumer start listening ..." )
 
 while True:
     for message in consumer:
-        consumed_message = json.loads(message.)
-
+        consumed_message = json.loads(message.value.decode())
+        total_cost = consumed_message["total_cost"]
+        
+        total_orders_count +=1
+        total_revenue += total_cost
+        
+        print(f"Orders count until now : {total_orders_count}")
+        print(f"Total Orders revenue until now : {total_revenue}")
+        
