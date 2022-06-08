@@ -1,5 +1,5 @@
 import json
-from kafka import ConsumerRebalanceListener, KafkaConsumer, KafkaProducer
+from kafka import KafkaConsumer, KafkaProducer
 
 
 ORDER_CONFIRMED_KAFKA_TOPIC = "order-confirmed"
